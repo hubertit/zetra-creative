@@ -47,7 +47,7 @@ export default function Header() {
             {menuItems.map((item, index) => (
               <motion.a
                 key={item}
-                href={`#${item.toLowerCase().replace(' ', '')}`}
+                href={`#${item === "Contact Us" ? "contact" : item.toLowerCase()}`}
                 className="text-white hover:text-gold transition-colors duration-300 relative group font-medium tracking-wide"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -82,7 +82,7 @@ export default function Header() {
               {menuItems.map((item, index) => (
                 <motion.a
                   key={item}
-                  href={`#${item.toLowerCase().replace(' ', '')}`}
+                  href={`#${item === "Contact Us" ? "contact" : item.toLowerCase()}`}
                   className="block py-3 text-white hover:text-gold transition-colors font-medium tracking-wide"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
