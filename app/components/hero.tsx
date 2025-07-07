@@ -33,12 +33,13 @@ export default function Hero() {
       {/* Content */}
       <motion.div className="relative z-10 text-center px-6 max-w-5xl mx-auto" style={{ opacity }}>
         <motion.h1
-          className="text-5xl md:text-7xl lg:text-8xl font-light mb-8 leading-tight tracking-tight"
+          className="text-5xl md:text-7xl lg:text-8xl font-medium mb-8 leading-tight tracking-tight"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
           <motion.span
+            className="font-semibold"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -46,7 +47,7 @@ export default function Hero() {
             Capturing
           </motion.span>
           <motion.span
-            className="text-gold block font-extralight"
+            className="text-gold block font-bold"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -54,6 +55,7 @@ export default function Hero() {
             Moments
           </motion.span>
           <motion.span
+            className="font-semibold"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -61,7 +63,7 @@ export default function Hero() {
             Creating
           </motion.span>
           <motion.span
-            className="text-gold font-extralight"
+            className="text-gold font-bold"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
