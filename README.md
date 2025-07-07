@@ -89,34 +89,34 @@ A modern, responsive website for Zetta Creative, a professional photography and 
 ### **Installation**
 
 1. **Clone the repository**
-   ```bash
+   \`\`\`bash
    git clone <repository-url>
    cd zetta-creative
-   ```
+   \`\`\`
 
 2. **Install dependencies**
-   ```bash
+   \`\`\`bash
    pnpm install
-   ```
+   \`\`\`
 
 3. **Run the development server**
-   ```bash
+   \`\`\`bash
    pnpm dev
-   ```
+   \`\`\`
 
 4. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
 ### **Build for Production**
 
-```bash
+\`\`\`bash
 pnpm build
 pnpm start
-```
+\`\`\`
 
 ## 📁 Project Structure
 
-```
+\`\`\`
 zetta-creative/
 ├── app/
 │   ├── components/          # Main page components
@@ -143,7 +143,7 @@ zetta-creative/
 │           ├── hero.jpg    # Hero background
 │           └── logo.png    # Company logo
 └── styles/                 # Additional styles
-```
+\`\`\`
 
 ## 🎨 Design System
 
