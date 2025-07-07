@@ -98,7 +98,7 @@ export default function Hero() {
 
       {/* Enhanced Scroll Indicator */}
       <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer flex flex-col items-center"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
         onClick={() => {
@@ -112,7 +112,7 @@ export default function Hero() {
             transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
           />
         </div>
-        <p className="text-gold text-sm mt-2 font-light tracking-wider">SCROLL</p>
+        <p className="text-gold text-sm mt-2 font-light tracking-wider text-center">SCROLL</p>
       </motion.div>
     </section>
   )
