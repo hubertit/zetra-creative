@@ -58,7 +58,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-gray-300">Reservations</p>
-                    <p className="text-white">+250 788 532 153</p>
+                    <p className="text-white">+250 XXX XXX XXX</p>
                   </div>
                 </div>
 
@@ -68,7 +68,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-gray-300">WhatsApp</p>
-                    <p className="text-white">+250 788 789 090</p>
+                    <p className="text-white">+250 XXX XXX XXX</p>
                   </div>
                 </div>
 
