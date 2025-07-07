@@ -31,7 +31,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div
-            className="text-2xl font-bold text-gold"
+            className="text-2xl font-bold text-gold tracking-wide"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400 }}
           >
@@ -44,7 +44,7 @@ export default function Header() {
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="text-white hover:text-gold transition-colors duration-300 relative group"
+                className="text-white hover:text-gold transition-colors duration-300 relative group font-medium tracking-wide"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -79,7 +79,7 @@ export default function Header() {
                 <motion.a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="block py-2 text-white hover:text-gold transition-colors"
+                  className="block py-3 text-white hover:text-gold transition-colors font-medium tracking-wide"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}

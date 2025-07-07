@@ -16,21 +16,21 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+          className="text-5xl md:text-7xl lg:text-8xl font-light mb-8 leading-tight tracking-tight"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           Capturing
-          <span className="text-gold block">Moments</span>
+          <span className="text-gold block font-extralight">Moments</span>
           Creating
-          <span className="text-gold">Magic</span>
+          <span className="text-gold font-extralight"> Magic</span>
         </motion.h1>
 
         <motion.p
-          className="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto"
+          className="text-xl md:text-2xl mb-10 text-gray-300 max-w-3xl mx-auto font-light leading-relaxed tracking-wide"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -44,7 +44,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <Button
-            className="bg-gold text-black hover:bg-gold/90 text-lg px-8 py-6 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/25"
+            className="bg-gold text-black hover:bg-gold/90 text-lg px-10 py-7 rounded-full font-medium tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/25"
             size="lg"
           >
             Book a Session

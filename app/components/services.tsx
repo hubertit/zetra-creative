@@ -33,28 +33,28 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 px-6">
+    <section id="services" className="py-24 px-6">
       <div className="container mx-auto max-w-7xl">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Our <span className="text-gold">Services</span>
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-light mb-8 tracking-tight">
+            Our <span className="text-gold font-extralight">Services</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed tracking-wide">
             Comprehensive creative solutions for all your photography and production needs
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
-              className="group bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-6 hover:border-gold/50 transition-all duration-300 hover:bg-gray-800/50"
+              className="group bg-gray-900/30 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-8 hover:border-gold/30 transition-all duration-500 hover:bg-gray-800/30"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -62,13 +62,13 @@ export default function Services() {
               whileHover={{ y: -10, scale: 1.02 }}
             >
               <div className="flex flex-col items-center text-center">
-                <div className="mb-4 p-3 bg-gold/10 rounded-full group-hover:bg-gold/20 transition-colors duration-300">
+                <div className="mb-6 p-4 bg-gold/10 rounded-full group-hover:bg-gold/20 transition-colors duration-300">
                   <service.icon className="w-8 h-8 text-gold" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-gold transition-colors duration-300">
+                <h3 className="text-xl font-medium mb-3 group-hover:text-gold transition-colors duration-300 tracking-wide">
                   {service.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{service.description}</p>
+                <p className="text-gray-400 text-sm leading-relaxed font-light tracking-wide">{service.description}</p>
               </div>
             </motion.div>
           ))}
