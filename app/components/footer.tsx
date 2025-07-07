@@ -82,7 +82,8 @@ export default function Footer() {
             <h4 className="text-base font-semibold text-white mb-3">Contact</h4>
             <div className="space-y-1 text-gray-400">
               <p className="text-sm">zettacreatives250@gmail.com</p>
-              <p className="text-sm">+250 XXX XXX XXX</p>
+              <p className="text-sm">+250 788 532 153</p>
+              <p className="text-sm">+250 788 789 090</p>
               <p className="text-sm">Kigali, Rwanda</p>
               <p className="text-sm">Mon - Sat: 9AM - 6PM</p>
             </div>
