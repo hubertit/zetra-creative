@@ -90,6 +90,9 @@ export default function Hero() {
           <Button
             className="bg-gold text-black hover:bg-gold/90 text-lg px-10 py-7 rounded-full font-medium tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/25"
             size="lg"
+            onClick={() => {
+              document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+            }}
           >
             Book a Session
           </Button>
