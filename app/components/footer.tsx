@@ -36,7 +36,10 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 mb-6 text-sm leading-relaxed">
-              Professional photography and production studio creating memories that last a lifetime.
+              Professional photography and<br />
+              production studio creating<br />
+              memories that last a<br />
+              lifetime.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
