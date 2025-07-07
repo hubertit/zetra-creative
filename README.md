@@ -192,7 +192,7 @@ zetta-creative/
 
 ## 📝 License
 
-© 2024 Zetta Creative. All rights reserved.
+© 2025 Zetta Creative. All rights reserved.
 
 ## 🤝 Contributing
 
