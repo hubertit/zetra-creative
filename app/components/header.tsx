@@ -48,22 +48,14 @@ export default function Header() {
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase().replace(' ', '')}`}
-                className={`transition-colors duration-300 relative group font-medium tracking-wide ${
-                  item === "Contact Us" 
-                    ? "text-gold hover:text-gold/80" 
-                    : "text-white hover:text-gold"
-                }`}
+                className="text-white hover:text-gold transition-colors duration-300 relative group font-medium tracking-wide"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -2 }}
               >
                 {item}
-                <span className={`absolute -bottom-1 left-0 h-0.5 transition-all duration-300 ${
-                  item === "Contact Us" 
-                    ? "w-full bg-gold" 
-                    : "w-0 bg-gold group-hover:w-full"
-                }`}></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></span>
               </motion.a>
             ))}
           </nav>
@@ -91,11 +83,7 @@ export default function Header() {
                 <motion.a
                   key={item}
                   href={`#${item.toLowerCase().replace(' ', '')}`}
-                  className={`block py-3 transition-colors font-medium tracking-wide ${
-                    item === "Contact Us" 
-                      ? "text-gold hover:text-gold/80" 
-                      : "text-white hover:text-gold"
-                  }`}
+                  className="block py-3 text-white hover:text-gold transition-colors font-medium tracking-wide"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
