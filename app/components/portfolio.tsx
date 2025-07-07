@@ -36,7 +36,7 @@ export default function Portfolio() {
       {/* Background decoration */}
       <motion.div className="absolute top-40 left-20 w-72 h-72 bg-gold/5 rounded-full blur-3xl" style={{ y }} />
 
-      <div className="container mx-auto max-w-7xl relative z-10">
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           className="text-center mb-20"
           initial={{ opacity: 0, y: 50 }}

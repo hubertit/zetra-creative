@@ -50,7 +50,7 @@ export default function Services() {
         style={{ y: useTransform(scrollYProgress, [0, 1], [-50, 50]) }}
       />
 
-      <div className="container mx-auto max-w-7xl relative z-10">
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           className="text-center mb-20"
           initial={{ opacity: 0, y: 50 }}
