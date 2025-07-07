@@ -28,7 +28,13 @@ export default function Footer() {
             viewport={{ once: true }}
             className="lg:col-span-1"
           >
-            <h3 className="text-2xl font-bold text-gold mb-4 tracking-wide">ZETTA CREATIVE</h3>
+            <div className="mb-4">
+              <img
+                src="/assets/img/logo.png"
+                alt="Zetta Creative"
+                className="h-10 w-auto"
+              />
+            </div>
             <p className="text-gray-300 mb-6 text-sm leading-relaxed">
               Professional photography and production studio creating memories that last a lifetime.
             </p>

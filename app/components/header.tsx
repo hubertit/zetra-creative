@@ -31,11 +31,15 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div
-            className="text-2xl font-bold text-gold tracking-wide"
+            className="flex items-center"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400 }}
           >
-            ZETTA CREATIVE
+            <img
+              src="/assets/img/logo.png"
+              alt="Zetta Creative"
+              className="h-12 w-auto"
+            />
           </motion.div>
 
           {/* Desktop Menu */}
