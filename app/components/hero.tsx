@@ -13,6 +13,8 @@ export default function Hero() {
 
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.8, 0])
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2])
+  const blur = useTransform(scrollYProgress, [0, 0.5, 1], [0, 2, 4])
 
   return (
     <section ref={ref} id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -21,8 +23,10 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/placeholder.svg?height=1080&width=1920")',
+            'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/assets/img/hero.jpg")',
           y,
+          scale,
+          filter: `blur(${blur}px)`,
         }}
       />
 
