@@ -32,7 +32,7 @@ export default function Footer() {
               <img
                 src="/assets/img/logo.png"
                 alt="Zetta Creative"
-                className="h-10 w-auto"
+                className="h-10 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-gray-300 mb-6 text-sm leading-relaxed">
